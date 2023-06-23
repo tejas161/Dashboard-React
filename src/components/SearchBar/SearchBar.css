@@ -1,0 +1,22 @@
+.search-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 12px;
+  height: 2.5rem;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.search-input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+.search-input:focus {
+  outline: none;
+}

@@ -1,0 +1,207 @@
+.accordion-item {
+  margin-top: 12px;
+  margin-bottom: 8px;
+   padding: 10px 20px;
+   border:1px solid grey;
+   border-radius: 15px;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+ 
+}
+
+.accordion-title > span{
+    font-size:1.7rem;
+  
+}
+
+
+.accordion-title-box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+    max-width:80%;
+}
+
+.accordion-title-box > img{
+    border-radius: 50%;
+    height:3.5rem;
+    width:3.2rem;
+   
+
+}
+
+.accordion-title-box > h2{
+    margin-left: 10px;
+    max-width:75%;
+   
+    
+    
+
+}
+
+
+
+
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+  padding: 0 20px;
+}
+
+.accordion-content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+
+.accordion-content-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+   
+}
+
+.accordion-edit-input{
+    margin-top:8px;
+    width:80%;
+    height:2rem;
+    padding-left:8px;
+    border-radius: 8px;
+    border:1px solid grey;    
+    outline:none;
+}
+
+.select-input{
+    width:100%;
+    background:none;
+}
+
+.accordion-edit-input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.accordion-textarea{
+    margin-top:8px;
+    width:100%;
+    border-radius: 8px; 
+    border-color: grey;  
+    outline:none;
+    padding-left: 8px;
+    padding-top:5px;
+    resize:none;
+}
+
+
+.accordion-content-wrapper h4{
+    font-size:1rem;
+    color:grey;
+
+}
+
+.accordion-content-wrapper p {
+    font-size:1rem;
+    margin-top:8px;
+
+}
+
+.accordion-content-description h4{
+    margin-top:8px;
+    color:grey;
+
+}
+
+.accordion-icons{
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding:0 20px;
+    
+    
+}
+
+#accordion-delete{
+    font-size:1.8rem;
+    color:rgb(230, 84, 84);
+    margin-right:8px;
+    cursor:pointer;
+    
+}
+
+#accordion-edit{
+    font-size:1.8rem;
+    color:rgb(104, 104, 223);
+    margin-left:8px;
+    cursor:pointer;
+
+}
+
+#accordion-cancel{
+    font-size:1.8rem;
+    color:rgb(230, 84, 84);
+    margin-right:8px;
+    cursor:pointer;
+}
+
+#accordion-save{
+    font-size:1.8rem;
+    color:rgb(99, 228, 99);
+    margin-left:8px;
+    cursor:pointer;
+
+}
+
+#user-delete > p{
+    color:black;
+}
+
+#user-delete > div{  
+
+    display:flex;
+    margin-top:12px;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+
+#user-delete > div > button {
+    width:100%;
+    height:2rem;
+    margin:0 8px;
+    font-weight: bold;
+}
+
+.button-delete{
+    background-color: rgb(241, 63, 63);
+    color:white;
+}
+
+
+@media screen and (max-width: 400px) 
+{
+.accordion-content-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.accordion-content-wrapper h4{
+    padding-top:8px;
+}
+
+
+
+}

@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Dashboard-React",
+  base:"https://tejas161.github.io/Dashboard-React/",
   plugins: [react()],
 })
